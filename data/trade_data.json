@@ -1,0 +1,30 @@
+{
+  "config": {
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT",
+      "DOGEUSDT"
+    ],
+    "scan_interval": 60,
+    "kline_interval": "15m",
+    "kline_limit": 200,
+    "buy_threshold": 3.0,
+    "sell_threshold": 1.5,
+    "buy_quantity_pct": 0.085,
+    "max_position_pct": 0.3,
+    "stop_loss_pct": 5.0,
+    "take_profit_pct": 10.0,
+    "futures_enabled": true,
+    "futures_leverage": 3,
+    "futures_buy_threshold": 3.0,
+    "futures_qty_pct": 0.05,
+    "target_profit": 1000.0,
+    "daily_target": 10.0,
+    "paper_trading": false
+  },
+  "positions": {},
+  "trade_records": [],
+  "total_pnl": 0.0,
+  "daily_pnl": 0.0
+}

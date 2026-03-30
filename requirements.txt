@@ -1,0 +1,8 @@
+python-binance==1.0.36
+pandas==3.0.1
+numpy==2.4.4
+ta==0.11.0
+PyQt5==5.15.11
+pyqtgraph==0.14.0
+requests==2.33.0
+python-dotenv==1.2.2

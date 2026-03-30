@@ -1,0 +1,872 @@
+[2026-03-30 16:39:03,038] INFO     src.core.rules - 已加载 5 条规则
+[2026-03-30 16:39:30,075] WARNING  src.core.binance_client - API密钥未配置，以只读模式运行（无法下单）
+[2026-03-30 16:39:30,883] INFO     src.core.engine - 🔍 开始扫描 [16:39:30] | 周期:15m
+[2026-03-30 16:39:30,884] INFO     src.core.engine - 🚀 小牛量化引擎启动 | 📋模拟交易 | 监控: BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT
+[2026-03-30 16:39:31,133] INFO     src.core.analyzer - BTCUSDT 评分: 4.2/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:39:31,134] INFO     src.core.engine -   BTCUSDT: 67828.0600 | 评分:4.2/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:39:31,385] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:39:31,385] INFO     src.core.engine -   ETHUSDT: 2067.7900 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:39:31,611] INFO     src.core.analyzer - SOLUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:39:31,612] INFO     src.core.engine -   SOLUSDT: 84.7000 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:39:31,826] INFO     src.core.analyzer - DOGEUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:39:31,826] INFO     src.core.engine -   DOGEUSDT: 0.0937 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:40:31,856] INFO     src.core.engine - 🔍 开始扫描 [16:40:31] | 周期:15m
+[2026-03-30 16:40:32,389] INFO     src.core.analyzer - BTCUSDT 评分: 4.2/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:40:32,389] INFO     src.core.engine -   BTCUSDT: 67809.3900 | 评分:4.2/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:40:32,584] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:40:32,584] INFO     src.core.engine -   ETHUSDT: 2068.0300 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:40:32,778] INFO     src.core.analyzer - SOLUSDT 评分: 4.7/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:1.0 TREND:1.0]
+[2026-03-30 16:40:32,779] INFO     src.core.engine -   SOLUSDT: 84.7100 | 评分:4.7/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:40:32,982] INFO     src.core.analyzer - DOGEUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:40:32,983] INFO     src.core.engine -   DOGEUSDT: 0.0937 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:40:43,114] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 5.0, 'sell_threshold': 2.0}
+[2026-03-30 16:40:43,115] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': True, 'futures_enabled': False, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 5.0, 'sell_threshold': 2.0, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 100.0}
+[2026-03-30 16:41:12,451] INFO     src.core.engine - 🔍 开始扫描 [16:41:12] | 周期:15m
+[2026-03-30 16:41:12,654] INFO     src.core.analyzer - BTCUSDT 评分: 4.2/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:41:12,655] INFO     src.core.engine -   BTCUSDT: 67789.9900 | 评分:4.2/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:12,849] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:41:12,850] INFO     src.core.engine -   ETHUSDT: 2067.1000 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:13,046] INFO     src.core.analyzer - SOLUSDT 评分: 4.7/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:1.0 TREND:1.0]
+[2026-03-30 16:41:13,046] INFO     src.core.engine -   SOLUSDT: 84.6900 | 评分:4.7/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:13,240] INFO     src.core.analyzer - DOGEUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:41:13,241] INFO     src.core.engine -   DOGEUSDT: 0.0936 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:16,020] INFO     src.core.engine - 🔍 开始扫描 [16:41:16] | 周期:15m
+[2026-03-30 16:41:16,221] INFO     src.core.analyzer - BTCUSDT 评分: 4.2/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:41:16,221] INFO     src.core.engine -   BTCUSDT: 67789.9900 | 评分:4.2/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:16,438] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:41:16,438] INFO     src.core.engine -   ETHUSDT: 2066.8900 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:16,653] INFO     src.core.analyzer - SOLUSDT 评分: 4.7/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:1.0 TREND:1.0]
+[2026-03-30 16:41:16,653] INFO     src.core.engine -   SOLUSDT: 84.6800 | 评分:4.7/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:16,850] INFO     src.core.analyzer - DOGEUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:41:16,851] INFO     src.core.engine -   DOGEUSDT: 0.0936 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:33,016] INFO     src.core.engine - 🔍 开始扫描 [16:41:33] | 周期:15m
+[2026-03-30 16:41:33,215] INFO     src.core.analyzer - BTCUSDT 评分: 4.6/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:41:33,215] INFO     src.core.engine -   BTCUSDT: 67768.4800 | 评分:4.6/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:41:33,423] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:41:33,423] INFO     src.core.engine -   ETHUSDT: 2066.4300 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:33,619] INFO     src.core.analyzer - SOLUSDT 评分: 4.7/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:1.0 TREND:1.0]
+[2026-03-30 16:41:33,620] INFO     src.core.engine -   SOLUSDT: 84.6200 | 评分:4.7/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:41:33,816] INFO     src.core.analyzer - DOGEUSDT 评分: 2.7/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:41:33,817] INFO     src.core.engine -   DOGEUSDT: 0.0936 | 评分:2.7/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:42:33,865] INFO     src.core.engine - 🔍 开始扫描 [16:42:33] | 周期:15m
+[2026-03-30 16:42:34,366] INFO     src.core.analyzer - BTCUSDT 评分: 4.6/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:42:34,367] INFO     src.core.engine -   BTCUSDT: 67734.8100 | 评分:4.6/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:42:34,556] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:42:34,556] INFO     src.core.engine -   ETHUSDT: 2065.7000 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:42:34,757] INFO     src.core.analyzer - SOLUSDT 评分: 4.7/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:1.0 TREND:1.0]
+[2026-03-30 16:42:34,758] INFO     src.core.engine -   SOLUSDT: 84.5900 | 评分:4.7/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:42:34,953] INFO     src.core.analyzer - DOGEUSDT 评分: 2.7/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:42:34,954] INFO     src.core.engine -   DOGEUSDT: 0.0935 | 评分:2.7/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:43:34,985] INFO     src.core.engine - 🔍 开始扫描 [16:43:34] | 周期:15m
+[2026-03-30 16:43:35,469] INFO     src.core.analyzer - BTCUSDT 评分: 4.6/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:43:35,469] INFO     src.core.engine -   BTCUSDT: 67752.9900 | 评分:4.6/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:43:35,659] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:43:35,660] INFO     src.core.engine -   ETHUSDT: 2065.9400 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:43:35,865] INFO     src.core.analyzer - SOLUSDT 评分: 4.7/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:1.0 TREND:1.0]
+[2026-03-30 16:43:35,865] INFO     src.core.engine -   SOLUSDT: 84.5700 | 评分:4.7/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:43:36,055] INFO     src.core.analyzer - DOGEUSDT 评分: 2.7/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:43:36,056] INFO     src.core.engine -   DOGEUSDT: 0.0935 | 评分:2.7/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:44:36,089] INFO     src.core.engine - 🔍 开始扫描 [16:44:36] | 周期:15m
+[2026-03-30 16:44:36,597] INFO     src.core.analyzer - BTCUSDT 评分: 4.6/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.5 TREND:1.0]
+[2026-03-30 16:44:36,598] INFO     src.core.engine -   BTCUSDT: 67749.7600 | 评分:4.6/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:44:36,802] INFO     src.core.analyzer - ETHUSDT 评分: 4.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:44:36,803] INFO     src.core.engine -   ETHUSDT: 2065.8200 | 评分:4.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:44:37,001] INFO     src.core.analyzer - SOLUSDT 评分: 4.7/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:1.0 TREND:1.0]
+[2026-03-30 16:44:37,001] INFO     src.core.engine -   SOLUSDT: 84.5400 | 评分:4.7/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:44:37,196] INFO     src.core.analyzer - DOGEUSDT 评分: 2.7/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:44:37,196] INFO     src.core.engine -   DOGEUSDT: 0.0935 | 评分:2.7/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:45:17,812] INFO     src.core.binance_client - 币安API连接成功 (正式网)
+[2026-03-30 16:45:28,738] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 5.0, 'sell_threshold': 2.0}
+[2026-03-30 16:45:28,738] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': True, 'futures_enabled': False, 'scan_interval': 62, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 5.0, 'sell_threshold': 2.0, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 100.0}
+[2026-03-30 16:45:37,228] INFO     src.core.engine - 🔍 开始扫描 [16:45:37] | 周期:15m
+[2026-03-30 16:45:37,395] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 5.0, 'sell_threshold': 2.0}
+[2026-03-30 16:45:37,396] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': True, 'futures_enabled': False, 'scan_interval': 62, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 5.0, 'sell_threshold': 2.0, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 100.0}
+[2026-03-30 16:45:37,421] INFO     src.core.analyzer - BTCUSDT 评分: 3.8/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:37,421] INFO     src.core.engine -   BTCUSDT: 67765.5300 | 评分:3.8/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:45:37,616] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:37,617] INFO     src.core.engine -   ETHUSDT: 2067.5500 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:45:37,808] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:37,809] INFO     src.core.engine -   SOLUSDT: 84.5800 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:45:38,004] INFO     src.core.analyzer - DOGEUSDT 评分: 3.1/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:38,005] INFO     src.core.engine -   DOGEUSDT: 0.0935 | 评分:3.1/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:45:55,442] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 16:45:57,152] INFO     src.core.binance_client - 币安API连接成功 (正式网)
+[2026-03-30 16:45:57,152] INFO     src.core.engine - 🔍 开始扫描 [16:45:57] | 周期:15m
+[2026-03-30 16:45:57,153] INFO     src.core.engine - 🚀 小牛量化引擎启动 | 📋模拟交易 | 监控: BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT
+[2026-03-30 16:45:57,363] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:57,364] INFO     src.core.engine -   BTCUSDT: 67769.9700 | 评分:4.3/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:45:57,597] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:57,597] INFO     src.core.engine -   ETHUSDT: 2067.5600 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:45:57,806] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:57,806] INFO     src.core.engine -   SOLUSDT: 84.5800 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:45:58,013] INFO     src.core.analyzer - DOGEUSDT 评分: 3.1/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:45:58,013] INFO     src.core.engine -   DOGEUSDT: 0.0935 | 评分:3.1/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:46:08,026] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 2.0}
+[2026-03-30 16:46:08,027] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': True, 'futures_enabled': False, 'scan_interval': 62, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 2.0, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 100.0}
+[2026-03-30 16:46:39,811] INFO     src.core.engine - 🔍 开始扫描 [16:46:39] | 周期:15m
+[2026-03-30 16:46:40,022] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:40,022] INFO     src.core.engine -   BTCUSDT: 67782.2100 | 评分:4.3/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:46:40,226] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:40,226] INFO     src.core.engine -   ETHUSDT: 2067.4900 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:46:40,433] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:40,434] INFO     src.core.engine -   SOLUSDT: 84.5900 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:46:40,639] INFO     src.core.analyzer - DOGEUSDT 评分: 3.1/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:40,639] INFO     src.core.engine -   DOGEUSDT: 0.0935 | 评分:3.1/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:46:41,067] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 16:46:42,703] INFO     src.core.binance_client - 币安API连接成功 (正式网)
+[2026-03-30 16:46:42,704] INFO     src.core.engine - 🔍 开始扫描 [16:46:42] | 周期:15m
+[2026-03-30 16:46:42,704] INFO     src.core.engine - 🚀 小牛量化引擎启动 | 📋模拟交易 | 监控: BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT
+[2026-03-30 16:46:42,892] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:42,893] INFO     src.core.engine -   BTCUSDT: 67769.9800 | 评分:4.3/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:46:43,078] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:43,079] INFO     src.core.engine -   ETHUSDT: 2066.9200 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:46:43,265] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:43,266] INFO     src.core.engine -   SOLUSDT: 84.5900 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:46:43,451] INFO     src.core.analyzer - DOGEUSDT 评分: 2.8/9.0 信号:HOLD [MACD:0.5 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:43,452] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:2.8/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:46:53,620] INFO     src.core.engine - 🔍 开始扫描 [16:46:53] | 周期:15m
+[2026-03-30 16:46:53,804] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:53,805] INFO     src.core.engine -   BTCUSDT: 67776.1000 | 评分:4.3/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:46:53,991] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:53,992] INFO     src.core.engine -   ETHUSDT: 2067.1500 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:46:54,172] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:54,173] INFO     src.core.engine -   SOLUSDT: 84.6000 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:46:54,356] INFO     src.core.analyzer - DOGEUSDT 评分: 3.1/9.0 信号:HOLD [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:46:54,357] INFO     src.core.engine -   DOGEUSDT: 0.0935 | 评分:3.1/9.0 | 信号:HOLD | [MACD:0.8 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:47:19,859] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 2.0}
+[2026-03-30 16:47:19,859] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': True, 'futures_enabled': False, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 2.0, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 100.0}
+[2026-03-30 16:47:45,481] INFO     src.core.engine - 🔍 开始扫描 [16:47:45] | 周期:15m
+[2026-03-30 16:47:45,666] INFO     src.core.analyzer - BTCUSDT 评分: 3.8/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:47:45,666] INFO     src.core.engine -   BTCUSDT: 67765.4300 | 评分:3.8/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:47:45,862] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:47:45,862] INFO     src.core.engine -   ETHUSDT: 2066.9600 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:47:45,963] INFO     src.core.rules - 规则 '合约做多规则' 已启用
+[2026-03-30 16:47:46,047] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:47:46,047] INFO     src.core.engine -   SOLUSDT: 84.5600 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:47:46,233] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:47:46,233] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:48:46,264] INFO     src.core.engine - 🔍 开始扫描 [16:48:46] | 周期:15m
+[2026-03-30 16:48:47,035] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:1.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:48:47,036] INFO     src.core.engine -   BTCUSDT: 67700.0000 | 评分:4.3/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:48:47,583] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:48:47,583] INFO     src.core.engine -   ETHUSDT: 2064.8900 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:48:47,802] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:48:47,802] INFO     src.core.engine -   SOLUSDT: 84.4200 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:48:48,011] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:48:48,011] INFO     src.core.engine -   DOGEUSDT: 0.0933 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:49:48,050] INFO     src.core.engine - 🔍 开始扫描 [16:49:48] | 周期:15m
+[2026-03-30 16:49:48,597] INFO     src.core.analyzer - BTCUSDT 评分: 3.8/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:49:48,598] INFO     src.core.engine -   BTCUSDT: 67751.0000 | 评分:3.8/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:49:48,805] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:49:48,806] INFO     src.core.engine -   ETHUSDT: 2066.6900 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:49:49,013] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:49:49,014] INFO     src.core.engine -   SOLUSDT: 84.5000 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:49:49,241] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:49:49,242] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:50:49,289] INFO     src.core.engine - 🔍 开始扫描 [16:50:49] | 周期:15m
+[2026-03-30 16:50:50,116] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:50:50,117] INFO     src.core.engine -   BTCUSDT: 67792.0000 | 评分:4.3/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:50:50,317] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:50:50,318] INFO     src.core.engine -   ETHUSDT: 2067.1700 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:50:50,513] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:50:50,514] INFO     src.core.engine -   SOLUSDT: 84.5500 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:50:50,725] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:50:50,726] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:51:50,759] INFO     src.core.engine - 🔍 开始扫描 [16:51:50] | 周期:15m
+[2026-03-30 16:51:55,774] ERROR    src.core.binance_client - 获取K线数据失败 BTCUSDT: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/klines?interval=15m&limit=200&symbol=BTCUSDT (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 16:51:55,790] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 16:51:55,791] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 16:51:59,629] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:51:59,629] INFO     src.core.engine -   ETHUSDT: 2067.5300 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:52:00,807] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:52:00,808] INFO     src.core.engine -   SOLUSDT: 84.6100 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:52:01,945] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:52:01,945] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:53:01,978] INFO     src.core.engine - 🔍 开始扫描 [16:53:01] | 周期:15m
+[2026-03-30 16:53:04,059] INFO     src.core.analyzer - BTCUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:53:04,060] INFO     src.core.engine -   BTCUSDT: 67804.0800 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:53:04,434] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:53:04,434] INFO     src.core.engine -   ETHUSDT: 2066.2500 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:53:04,914] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:53:04,914] INFO     src.core.engine -   SOLUSDT: 84.5800 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:53:05,313] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:53:05,314] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:54:05,345] INFO     src.core.engine - 🔍 开始扫描 [16:54:05] | 周期:15m
+[2026-03-30 16:54:05,894] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:05,895] INFO     src.core.engine -   BTCUSDT: 67793.2500 | 评分:4.3/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:54:06,093] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:06,093] INFO     src.core.engine -   ETHUSDT: 2066.4900 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:54:06,294] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:06,295] INFO     src.core.engine -   SOLUSDT: 84.5900 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:54:06,515] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:06,516] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:54:21,762] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 16:54:38,025] INFO     src.core.binance_client - 币安API连接成功 (正式网)
+[2026-03-30 16:54:38,026] INFO     src.core.engine - 🔍 开始扫描 [16:54:38] | 周期:15m
+[2026-03-30 16:54:38,027] INFO     src.core.engine - 🚀 小牛量化引擎启动 | 📋模拟交易 | 监控: BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT
+[2026-03-30 16:54:38,228] INFO     src.core.analyzer - BTCUSDT 评分: 4.3/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:38,228] INFO     src.core.engine -   BTCUSDT: 67793.2400 | 评分:4.3/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:54:38,421] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:38,421] INFO     src.core.engine -   ETHUSDT: 2066.0600 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:54:38,615] INFO     src.core.analyzer - SOLUSDT 评分: 3.5/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:38,616] INFO     src.core.engine -   SOLUSDT: 84.5700 | 评分:3.5/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 16:54:38,807] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:38,807] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:54:40,660] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 2.0}
+[2026-03-30 16:54:40,660] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': False, 'futures_enabled': True, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 2.0, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 100.0}
+[2026-03-30 16:54:57,460] INFO     src.core.engine - 🔍 开始扫描 [16:54:57] | 周期:15m
+[2026-03-30 16:54:57,656] INFO     src.core.analyzer - BTCUSDT 评分: 3.8/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:57,657] INFO     src.core.engine -   BTCUSDT: 67763.5000 | 评分:3.8/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:54:58,023] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:58,024] INFO     src.core.engine -   ETHUSDT: 2065.7400 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:54:58,385] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:58,386] INFO     src.core.engine -   SOLUSDT: 84.5500 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:54:58,767] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:54:58,767] INFO     src.core.engine -   DOGEUSDT: 0.0934 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:55:38,839] INFO     src.core.engine - 🔍 开始扫描 [16:55:38] | 周期:15m
+[2026-03-30 16:55:39,042] INFO     src.core.analyzer - BTCUSDT 评分: 3.8/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:55:39,042] INFO     src.core.engine -   BTCUSDT: 67739.2000 | 评分:3.8/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:55:39,412] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:55:39,412] INFO     src.core.engine -   ETHUSDT: 2065.4400 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:55:39,777] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:55:39,778] INFO     src.core.engine -   SOLUSDT: 84.5600 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:55:40,143] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:55:40,144] INFO     src.core.engine -   DOGEUSDT: 0.0933 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:56:40,346] INFO     src.core.engine - 🔍 开始扫描 [16:56:40] | 周期:15m
+[2026-03-30 16:56:40,874] INFO     src.core.analyzer - BTCUSDT 评分: 3.9/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:56:40,875] INFO     src.core.engine -   BTCUSDT: 67655.6100 | 评分:3.9/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:56:41,235] INFO     src.core.analyzer - ETHUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:56:41,236] INFO     src.core.engine -   ETHUSDT: 2063.8600 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:56:41,579] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:56:41,580] INFO     src.core.engine -   SOLUSDT: 84.4900 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:56:41,958] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:56:41,959] INFO     src.core.engine -   DOGEUSDT: 0.0933 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:57:04,627] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 1.5}
+[2026-03-30 16:57:04,627] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': False, 'futures_enabled': True, 'scan_interval': 62, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 1.5, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 10.0}
+[2026-03-30 16:57:22,532] INFO     src.core.engine - 🔍 开始扫描 [16:57:22] | 周期:15m
+[2026-03-30 16:57:22,720] INFO     src.core.analyzer - BTCUSDT 评分: 3.9/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:57:22,720] INFO     src.core.engine -   BTCUSDT: 67655.4400 | 评分:3.9/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:57:23,073] INFO     src.core.analyzer - ETHUSDT 评分: 3.4/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:57:23,074] INFO     src.core.engine -   ETHUSDT: 2062.7800 | 评分:3.4/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:57:23,459] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:57:23,460] INFO     src.core.engine -   SOLUSDT: 84.4500 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:57:23,833] INFO     src.core.analyzer - DOGEUSDT 评分: 3.4/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:1.2 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 16:57:23,834] INFO     src.core.engine -   DOGEUSDT: 0.0932 | 评分:3.4/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:1.2 KDJ:0.3]
+[2026-03-30 16:57:42,173] INFO     src.core.engine - 🔍 开始扫描 [16:57:42] | 周期:15m
+[2026-03-30 16:57:42,384] INFO     src.core.analyzer - BTCUSDT 评分: 3.9/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.8 TREND:1.0]
+[2026-03-30 16:57:42,385] INFO     src.core.engine -   BTCUSDT: 67662.2800 | 评分:3.9/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:57:42,747] INFO     src.core.analyzer - ETHUSDT 评分: 3.4/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:57:42,747] INFO     src.core.engine -   ETHUSDT: 2063.2100 | 评分:3.4/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:57:43,109] INFO     src.core.analyzer - SOLUSDT 评分: 3.9/9.0 信号:HOLD [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:57:43,110] INFO     src.core.engine -   SOLUSDT: 84.4700 | 评分:3.9/9.0 | 信号:HOLD | [MACD:2.0 BOLL:0.0 RSI:0.4 KDJ:0.3]
+[2026-03-30 16:57:43,458] INFO     src.core.analyzer - DOGEUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 16:57:43,459] INFO     src.core.engine -   DOGEUSDT: 0.0932 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 16:57:50,364] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 1.5}
+[2026-03-30 16:57:50,364] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': False, 'futures_enabled': True, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 1.5, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 10.0}
+[2026-03-30 16:57:57,914] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 16:58:44,571] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 1.5}
+[2026-03-30 16:58:44,571] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': False, 'futures_enabled': True, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 1.5, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 10.0}
+[2026-03-30 17:00:20,287] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+[2026-03-30 17:00:27,285] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774861222275&signature=c1dee4a4802529ccfa81b139ac18aa3a72fdeb9362d390774a23ba24ccd5c8e6 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:00:33,297] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774861228279&signature=c27ae83a707a4496705104244ae5871e3a6ed4b47adf2228b4e64c90693b0b42 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:00:44,343] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+[2026-03-30 17:01:04,832] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+[2026-03-30 17:01:41,345] INFO     src.core.rules - 已加载 5 条规则
+[2026-03-30 17:01:41,360] INFO     src.core.engine - 数据加载成功: 0 条成交记录
+[2026-03-30 17:01:54,536] INFO     src.core.rules - 已加载 5 条规则
+[2026-03-30 17:01:54,537] INFO     src.core.engine - 数据加载成功: 0 条成交记录
+[2026-03-30 17:02:03,458] INFO     src.core.engine - 🔍 开始扫描 [17:02:03] | 周期:15m
+[2026-03-30 17:02:17,156] INFO     src.core.engine - 🔍 开始扫描 [17:02:17] | 周期:15m
+[2026-03-30 17:02:30,493] ERROR    src.core.binance_client - 连接异常: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Read timed out. (read timeout=10)
+[2026-03-30 17:02:30,493] WARNING  src.core.engine - ⚠️ 币安API连接失败，请检查配置
+[2026-03-30 17:02:30,546] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 17:02:42,753] ERROR    src.core.binance_client - 连接异常: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/ping (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:02:42,754] WARNING  src.core.engine - ⚠️ 币安API连接失败，请检查配置
+[2026-03-30 17:03:00,237] INFO     src.core.rules - 已加载 5 条规则
+[2026-03-30 17:03:00,239] INFO     src.core.engine - 数据加载成功: 0 条成交记录
+[2026-03-30 17:03:45,650] INFO     src.core.binance_client - 币安API连接成功 (测试网)
+[2026-03-30 17:03:45,651] INFO     src.core.engine - 🔍 开始扫描 [17:03:45] | 周期:15m
+[2026-03-30 17:03:45,652] INFO     src.core.engine - 🚀 小牛量化引擎启动 | 🔴实盘交易 | 监控: BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT
+[2026-03-30 17:03:48,463] INFO     src.core.analyzer - BTCUSDT 评分: 3.0/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:03:48,463] INFO     src.core.engine -   BTCUSDT: 67617.0000 | 评分:3.0/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:03:49,512] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:03:50,208] INFO     src.core.analyzer - ETHUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:03:50,208] INFO     src.core.engine -   ETHUSDT: 2060.5200 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:03:50,686] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774861425668&signature=71239dbbd6b8dbca8a251ecd93d1b6363d5cda32268fa1fb4ac688db4f6dc46b (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:03:50,852] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:03:51,697] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:03:51,697] INFO     src.core.engine -   SOLUSDT: 84.4300 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:03:53,393] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:03:54,336] INFO     src.core.analyzer - DOGEUSDT 评分: 3.2/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:03:54,337] INFO     src.core.engine -   DOGEUSDT: 0.0931 | 评分:3.2/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0]
+[2026-03-30 17:03:54,994] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:03:56,295] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:03:58,673] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:03:59,845] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 1.5}
+[2026-03-30 17:03:59,845] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': True, 'futures_enabled': False, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 1.5, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 7.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 10.0}
+[2026-03-30 17:04:47,402] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 1.5}
+[2026-03-30 17:04:47,403] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': True, 'futures_enabled': False, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 1.5, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 3.5, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 10.0}
+[2026-03-30 17:04:55,026] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 17:04:57,970] INFO     src.core.binance_client - 币安API连接成功 (测试网)
+[2026-03-30 17:04:57,971] INFO     src.core.engine - 🔍 开始扫描 [17:04:57] | 周期:15m
+[2026-03-30 17:04:57,971] INFO     src.core.engine - 🚀 小牛量化引擎启动 | 📋模拟交易 | 监控: BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT
+[2026-03-30 17:04:58,620] INFO     src.core.analyzer - BTCUSDT 评分: 3.0/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:04:58,621] INFO     src.core.engine -   BTCUSDT: 67611.0400 | 评分:3.0/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:04:59,788] INFO     src.core.analyzer - ETHUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:04:59,788] INFO     src.core.engine -   ETHUSDT: 2060.6200 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:05:01,406] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:05:01,406] INFO     src.core.engine -   SOLUSDT: 84.4000 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:05:02,019] INFO     src.core.analyzer - DOGEUSDT 评分: 3.2/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:05:02,020] INFO     src.core.engine -   DOGEUSDT: 0.0931 | 评分:3.2/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0]
+[2026-03-30 17:05:34,220] INFO     src.core.engine - 🔍 开始扫描 [17:05:34] | 周期:15m
+[2026-03-30 17:05:34,840] INFO     src.core.analyzer - BTCUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:05:34,841] INFO     src.core.engine -   BTCUSDT: 67649.9900 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3]
+[2026-03-30 17:05:35,447] INFO     src.core.analyzer - ETHUSDT 评分: 3.1/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:05:35,448] INFO     src.core.engine -   ETHUSDT: 2061.9900 | 评分:3.1/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:05:37,928] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:05:37,928] INFO     src.core.engine -   SOLUSDT: 84.4400 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:05:47,949] ERROR    src.core.binance_client - 获取K线数据失败 DOGEUSDT: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Read timed out. (read timeout=10)
+[2026-03-30 17:05:47,950] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:05:47,950] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:06:02,054] INFO     src.core.engine - 🔍 开始扫描 [17:06:02] | 周期:15m
+[2026-03-30 17:06:03,336] INFO     src.core.analyzer - BTCUSDT 评分: 3.0/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:06:03,336] INFO     src.core.engine -   BTCUSDT: 67634.0000 | 评分:3.0/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:06:04,137] INFO     src.core.analyzer - ETHUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:06:04,137] INFO     src.core.engine -   ETHUSDT: 2061.0400 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:06:04,668] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:06:04,669] INFO     src.core.engine -   SOLUSDT: 84.4400 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:06:05,121] INFO     src.core.analyzer - DOGEUSDT 评分: 3.2/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:06:05,122] INFO     src.core.engine -   DOGEUSDT: 0.0931 | 评分:3.2/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0]
+[2026-03-30 17:06:24,947] INFO     src.core.analyzer - 参数已更新: {'buy_threshold': 3.0, 'sell_threshold': 1.5}
+[2026-03-30 17:06:24,947] INFO     src.core.engine - ⚙️ 配置已更新: {'paper_trading': False, 'futures_enabled': True, 'scan_interval': 60, 'kline_interval': '15m', 'symbols': ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'DOGEUSDT'], 'buy_threshold': 3.0, 'sell_threshold': 1.5, 'buy_quantity_pct': 0.085, 'max_position_pct': 0.3, 'stop_loss_pct': 5.0, 'take_profit_pct': 10.0, 'futures_buy_threshold': 3.0, 'futures_leverage': 3, 'target_profit': 1000.0, 'daily_target': 10.0}
+[2026-03-30 17:06:25,672] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:28,690] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:31,720] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:34,684] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:37,682] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:40,720] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:43,672] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:46,672] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:49,688] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:52,679] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:55,676] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:06:58,675] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:01,680] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:04,668] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:05,152] INFO     src.core.engine - 🔍 开始扫描 [17:07:05] | 周期:15m
+[2026-03-30 17:07:05,612] INFO     src.core.analyzer - BTCUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:07:05,612] INFO     src.core.engine -   BTCUSDT: 67650.9200 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3]
+[2026-03-30 17:07:06,047] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:06,493] INFO     src.core.analyzer - ETHUSDT 评分: 3.1/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:07:06,494] INFO     src.core.engine -   ETHUSDT: 2062.3400 | 评分:3.1/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:07:06,915] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:07,361] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:07:07,361] INFO     src.core.engine -   SOLUSDT: 84.4500 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:07:07,769] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:08,210] INFO     src.core.analyzer - DOGEUSDT 评分: 3.2/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:07:08,211] INFO     src.core.engine -   DOGEUSDT: 0.0931 | 评分:3.2/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0]
+[2026-03-30 17:07:08,469] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:08,616] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:10,696] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:13,668] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:16,667] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:19,696] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:22,697] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:25,667] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:28,672] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:31,685] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:34,701] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:37,681] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:40,741] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:43,670] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:46,679] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:49,680] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:52,674] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:55,678] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:07:58,675] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:01,666] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:04,682] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:07,673] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:08,661] INFO     src.core.engine - 🔍 开始扫描 [17:08:08] | 周期:15m
+[2026-03-30 17:08:09,112] INFO     src.core.analyzer - BTCUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:08:09,112] INFO     src.core.engine -   BTCUSDT: 67648.5100 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3]
+[2026-03-30 17:08:09,528] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:09,992] INFO     src.core.analyzer - ETHUSDT 评分: 3.1/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:08:09,992] INFO     src.core.engine -   ETHUSDT: 2063.1100 | 评分:3.1/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:08:10,417] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:10,866] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:08:10,867] INFO     src.core.engine -   SOLUSDT: 84.4700 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:08:11,270] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:11,529] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:11,715] INFO     src.core.analyzer - DOGEUSDT 评分: 3.2/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:08:11,715] INFO     src.core.engine -   DOGEUSDT: 0.0931 | 评分:3.2/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0]
+[2026-03-30 17:08:12,127] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:13,671] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:16,671] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:19,681] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:22,671] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:25,670] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:28,676] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:31,677] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:34,680] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:37,681] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:40,763] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:43,683] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:46,682] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:49,680] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:52,667] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:55,675] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:08:58,669] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:01,676] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:04,682] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:07,675] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:10,683] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:12,198] INFO     src.core.engine - 🔍 开始扫描 [17:09:12] | 周期:15m
+[2026-03-30 17:09:12,652] INFO     src.core.analyzer - BTCUSDT 评分: 3.0/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:09:12,652] INFO     src.core.engine -   BTCUSDT: 67631.9400 | 评分:3.0/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:09:13,063] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:13,505] INFO     src.core.analyzer - ETHUSDT 评分: 3.1/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:09:13,505] INFO     src.core.engine -   ETHUSDT: 2061.9500 | 评分:3.1/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:09:13,912] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:14,349] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:09:14,349] INFO     src.core.engine -   SOLUSDT: 84.4400 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:09:14,480] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:14,752] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:15,200] INFO     src.core.analyzer - DOGEUSDT 评分: 3.6/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:09:15,201] INFO     src.core.engine -   DOGEUSDT: 0.0930 | 评分:3.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0]
+[2026-03-30 17:09:15,721] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:16,679] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:19,673] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:22,686] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:25,694] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:28,686] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:31,994] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:34,690] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:37,671] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:40,761] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:43,677] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:46,684] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:49,679] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:52,674] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:55,673] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:09:58,675] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:01,681] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:04,696] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:07,698] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:10,700] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:13,677] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:15,847] INFO     src.core.engine - 🔍 开始扫描 [17:10:15] | 周期:15m
+[2026-03-30 17:10:16,308] INFO     src.core.analyzer - BTCUSDT 评分: 3.0/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:10:16,309] INFO     src.core.engine -   BTCUSDT: 67619.0300 | 评分:3.0/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:10:16,721] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:17,171] INFO     src.core.analyzer - ETHUSDT 评分: 2.1/9.0 信号:HOLD [MACD:0.5 BOLL:0.0 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:10:17,172] INFO     src.core.engine -   ETHUSDT: 2061.2100 | 评分:2.1/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.0 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:10:17,424] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:17,581] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:18,027] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:10:18,028] INFO     src.core.engine -   SOLUSDT: 84.3900 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:10:18,440] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:19,207] INFO     src.core.analyzer - DOGEUSDT 评分: 3.6/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:10:19,208] INFO     src.core.engine -   DOGEUSDT: 0.0930 | 评分:3.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0]
+[2026-03-30 17:10:19,625] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:19,661] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:23,298] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:26,880] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:32,276] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:34,675] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:37,660] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:40,764] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:43,669] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:46,676] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:49,657] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:52,655] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:55,670] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:10:58,645] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:01,666] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:04,654] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:07,662] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:10,652] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:13,656] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:16,658] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:19,653] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:19,691] INFO     src.core.engine - 🔍 开始扫描 [17:11:19] | 周期:15m
+[2026-03-30 17:11:20,135] INFO     src.core.analyzer - BTCUSDT 评分: 3.0/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:11:20,135] INFO     src.core.engine -   BTCUSDT: 67631.2000 | 评分:3.0/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:11:20,526] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:20,964] INFO     src.core.analyzer - ETHUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:11:20,964] INFO     src.core.engine -   ETHUSDT: 2060.3400 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:11:21,373] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:21,800] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:11:21,800] INFO     src.core.engine -   SOLUSDT: 84.3600 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:11:22,190] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:22,624] INFO     src.core.analyzer - DOGEUSDT 评分: 3.6/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:11:22,625] INFO     src.core.engine -   DOGEUSDT: 0.0930 | 评分:3.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0]
+[2026-03-30 17:11:23,019] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:23,471] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:25,652] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:28,676] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:31,666] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:34,677] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:37,655] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:40,869] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:43,657] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:46,662] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:49,661] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:52,653] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:55,668] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:11:58,655] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:01,651] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:04,654] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:07,662] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:10,652] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:13,718] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:16,684] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:19,651] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:22,657] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:23,065] INFO     src.core.engine - 🔍 开始扫描 [17:12:23] | 周期:15m
+[2026-03-30 17:12:23,499] INFO     src.core.analyzer - BTCUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3 VOL:0.2 TREND:0.7]
+[2026-03-30 17:12:23,500] INFO     src.core.engine -   BTCUSDT: 67667.9500 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.3]
+[2026-03-30 17:12:23,890] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:24,334] INFO     src.core.analyzer - ETHUSDT 评分: 2.6/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0 VOL:0.2 TREND:1.0]
+[2026-03-30 17:12:24,334] INFO     src.core.engine -   ETHUSDT: 2061.0600 | 评分:2.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:12:24,833] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:25,259] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:12:25,259] INFO     src.core.engine -   SOLUSDT: 84.4100 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:12:25,651] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:26,077] INFO     src.core.analyzer - DOGEUSDT 评分: 3.6/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:12:26,078] INFO     src.core.engine -   DOGEUSDT: 0.0930 | 评分:3.6/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:1.2 KDJ:0.0]
+[2026-03-30 17:12:26,102] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:26,464] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:28,658] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:31,655] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:34,649] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:37,667] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:41,045] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:44,051] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:46,975] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:49,848] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:52,864] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:55,729] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:12:58,693] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:01,670] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:04,671] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:07,665] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:10,667] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:13,706] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:16,651] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:19,654] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:22,660] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:25,676] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:26,503] INFO     src.core.engine - 🔍 开始扫描 [17:13:26] | 周期:15m
+[2026-03-30 17:13:26,942] INFO     src.core.analyzer - BTCUSDT 评分: 3.3/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3 VOL:0.5 TREND:0.7]
+[2026-03-30 17:13:26,943] INFO     src.core.engine -   BTCUSDT: 67628.8200 | 评分:3.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:13:27,333] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:27,762] INFO     src.core.analyzer - ETHUSDT 评分: 2.9/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0 VOL:0.5 TREND:1.0]
+[2026-03-30 17:13:27,762] INFO     src.core.engine -   ETHUSDT: 2059.5500 | 评分:2.9/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:13:28,152] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:28,573] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:13:28,574] INFO     src.core.engine -   SOLUSDT: 84.3500 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:13:28,960] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:29,012] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:29,406] INFO     src.core.analyzer - DOGEUSDT 评分: 3.8/9.0 信号:HOLD [MACD:0.5 BOLL:1.5 RSI:1.2 KDJ:0.0 VOL:0.2 TREND:0.4]
+[2026-03-30 17:13:29,406] INFO     src.core.engine -   DOGEUSDT: 0.0929 | 评分:3.8/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.5 RSI:1.2 KDJ:0.0]
+[2026-03-30 17:13:29,815] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:31,663] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:34,669] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:37,659] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:40,749] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:43,661] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:46,668] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:49,671] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:52,661] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:55,664] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:13:58,660] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:01,694] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:04,687] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:07,666] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:10,952] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:13,655] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:16,667] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:19,662] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:22,653] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:25,653] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:28,659] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:29,846] INFO     src.core.engine - 🔍 开始扫描 [17:14:29] | 周期:15m
+[2026-03-30 17:14:30,284] INFO     src.core.analyzer - BTCUSDT 评分: 3.8/9.0 信号:HOLD [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.3 VOL:0.5 TREND:0.7]
+[2026-03-30 17:14:30,284] INFO     src.core.engine -   BTCUSDT: 67594.7800 | 评分:3.8/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.3]
+[2026-03-30 17:14:30,675] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:31,110] INFO     src.core.analyzer - ETHUSDT 评分: 2.9/9.0 信号:HOLD [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0 VOL:0.5 TREND:1.0]
+[2026-03-30 17:14:31,111] INFO     src.core.engine -   ETHUSDT: 2059.6400 | 评分:2.9/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:14:31,509] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:31,934] INFO     src.core.analyzer - SOLUSDT 评分: 3.0/9.0 信号:HOLD [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3 VOL:0.2 TREND:1.0]
+[2026-03-30 17:14:31,934] INFO     src.core.engine -   SOLUSDT: 84.3100 | 评分:3.0/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.0 RSI:0.0 KDJ:0.3]
+[2026-03-30 17:14:31,997] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:32,319] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:32,741] INFO     src.core.analyzer - DOGEUSDT 评分: 4.1/9.0 信号:HOLD [MACD:0.5 BOLL:1.5 RSI:1.2 KDJ:0.0 VOL:0.2 TREND:0.7]
+[2026-03-30 17:14:32,741] INFO     src.core.engine -   DOGEUSDT: 0.0929 | 评分:4.1/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.5 RSI:1.2 KDJ:0.0]
+[2026-03-30 17:14:33,128] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:34,655] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:37,692] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:40,774] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:43,722] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:46,983] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:49,662] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:52,682] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:14:55,651] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:00,680] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:02,425] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:05,931] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:08,444] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:11,437] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:14,488] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:20,885] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:23,455] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:15:33,161] INFO     src.core.engine - 🔍 开始扫描 [17:15:33] | 周期:15m
+[2026-03-30 17:15:35,275] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Read timed out. (read timeout=10)
+[2026-03-30 17:15:38,174] ERROR    src.core.binance_client - 获取K线数据失败 BTCUSDT: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?interval=15m&limit=200&symbol=BTCUSDT (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:15:38,175] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:15:38,175] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:15:42,289] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774862137280&signature=5ee53f3576d8405b7c59c14c57d8c81a7229cebb6386d9d46c34b5a869a8286c (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:15:43,189] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774862138175&signature=d6b8416e6f62f1ea9e8e36c10604d842e86682fa1b14d7b4c275cc975ae55f86 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:15:48,206] ERROR    src.core.binance_client - 获取K线数据失败 ETHUSDT: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/klines?interval=15m&limit=200&symbol=ETHUSDT (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:15:48,207] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:15:48,207] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:15:48,302] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774862143281&signature=4fe13c4b2ce49206ad0e5e68869104ffafc49041e2c338174bead4af7a329997 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:15:53,222] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774862148207&signature=1a61f6876ca2b4385625dc2a6988b614bc52982a9f58adb10443c90dede9cd3e (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:15:54,288] ERROR    src.core.binance_client - 获取现货账户失败: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/account?recvWindow=10000&timestamp=1774862149281&signature=d13e27311ef8bd05c044e464a7df45bc0fc6eafc9a3e9051ef284797111560c2 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:15:54,295] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 17:16:19,389] INFO     src.core.rules - 已加载 5 条规则
+[2026-03-30 17:16:19,404] INFO     src.core.engine - 数据加载成功: 0 条成交记录
+[2026-03-30 17:16:41,516] INFO     src.core.binance_client - 币安API连接成功 (测试网)
+[2026-03-30 17:16:41,518] INFO     src.core.engine - 🔍 开始扫描 [17:16:41] | 周期:15m
+[2026-03-30 17:16:41,519] INFO     src.core.engine - 🚀 小牛量化引擎启动 | 🔴实盘交易 | 监控: BTCUSDT, ETHUSDT, SOLUSDT, DOGEUSDT
+[2026-03-30 17:16:41,766] ERROR    src.core.analyzer - 分析 BTCUSDT 失败: 'bool' object is not callable
+Traceback (most recent call last):
+  File "E:\小牛量化\src\core\analyzer.py", line 405, in analyze
+    if result.should_buy(buy_threshold):
+       ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+[2026-03-30 17:16:41,769] INFO     src.core.engine -   BTCUSDT: 67562.5200 | 评分:3.2/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.0 RSI:0.8 KDJ:0.0]
+[2026-03-30 17:16:41,924] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:42,052] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:42,235] ERROR    src.core.analyzer - 分析 ETHUSDT 失败: 'bool' object is not callable
+Traceback (most recent call last):
+  File "E:\小牛量化\src\core\analyzer.py", line 405, in analyze
+    if result.should_buy(buy_threshold):
+       ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+[2026-03-30 17:16:42,237] INFO     src.core.engine -   ETHUSDT: 2058.8600 | 评分:2.3/9.0 | 信号:HOLD | [MACD:0.5 BOLL:0.5 RSI:0.4 KDJ:0.0]
+[2026-03-30 17:16:42,400] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:42,626] ERROR    src.core.analyzer - 分析 SOLUSDT 失败: 'bool' object is not callable
+Traceback (most recent call last):
+  File "E:\小牛量化\src\core\analyzer.py", line 405, in analyze
+    if result.should_buy(buy_threshold):
+       ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+[2026-03-30 17:16:42,630] INFO     src.core.engine -   SOLUSDT: 84.2700 | 评分:3.6/9.0 | 信号:HOLD | [MACD:1.5 BOLL:0.5 RSI:0.4 KDJ:0.3]
+[2026-03-30 17:16:42,820] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:43,002] ERROR    src.core.analyzer - 分析 DOGEUSDT 失败: 'bool' object is not callable
+Traceback (most recent call last):
+  File "E:\小牛量化\src\core\analyzer.py", line 405, in analyze
+    if result.should_buy(buy_threshold):
+       ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'bool' object is not callable
+[2026-03-30 17:16:43,004] INFO     src.core.engine -   DOGEUSDT: 0.0929 | 评分:3.9/9.0 | 信号:HOLD | [MACD:0.5 BOLL:1.5 RSI:0.8 KDJ:0.5]
+[2026-03-30 17:16:43,160] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:44,454] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:47,447] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:50,450] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:53,456] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:56,451] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:16:59,459] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:17:02,447] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:17:05,438] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:17:08,449] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:17:11,447] ERROR    src.core.binance_client - 获取现货账户失败: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+[2026-03-30 17:17:23,214] ERROR    src.core.binance_client - 连接异常: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Read timed out. (read timeout=10)
+[2026-03-30 17:17:43,191] INFO     src.core.engine - 🔍 开始扫描 [17:17:43] | 周期:15m
+[2026-03-30 17:17:43,192] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:17:43,194] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:17:43,195] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:17:43,201] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:17:43,203] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:17:43,205] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:17:43,211] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:17:43,211] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:17:55,662] ERROR    src.core.binance_client - 连接异常: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/ping (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:18:43,249] INFO     src.core.engine - 🔍 开始扫描 [17:18:43] | 周期:15m
+[2026-03-30 17:18:43,252] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:18:43,258] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:18:43,260] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:18:43,266] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:18:43,267] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:18:43,274] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:18:43,276] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:18:43,278] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:19:43,321] INFO     src.core.engine - 🔍 开始扫描 [17:19:43] | 周期:15m
+[2026-03-30 17:19:43,326] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:19:43,329] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:19:43,331] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:19:43,340] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:19:43,345] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:19:43,353] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:19:43,356] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:19:43,363] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:20:43,402] INFO     src.core.engine - 🔍 开始扫描 [17:20:43] | 周期:15m
+[2026-03-30 17:20:43,403] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:20:43,409] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:20:43,410] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:20:43,415] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:20:43,415] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:20:43,416] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:20:43,417] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:20:43,419] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:20:49,026] ERROR    src.core.binance_client - 连接异常: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/ping (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:20:57,990] ERROR    src.core.binance_client - 连接异常: HTTPSConnectionPool(host='testnet.binance.vision', port=443): Max retries exceeded with url: /api/v3/ping (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+[2026-03-30 17:21:43,624] INFO     src.core.engine - 🔍 开始扫描 [17:21:43] | 周期:15m
+[2026-03-30 17:21:43,626] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:21:43,632] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:21:43,636] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:21:43,643] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:21:43,645] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:21:43,647] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:21:43,655] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:21:43,657] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:22:43,754] INFO     src.core.engine - 🔍 开始扫描 [17:22:43] | 周期:15m
+[2026-03-30 17:22:43,756] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:22:43,761] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:22:43,763] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:22:43,771] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:22:43,773] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:22:43,774] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:22:43,781] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:22:43,783] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:23:43,831] INFO     src.core.engine - 🔍 开始扫描 [17:23:43] | 周期:15m
+[2026-03-30 17:23:43,833] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:23:43,838] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:23:43,840] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:23:43,845] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:23:43,847] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:23:43,849] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:23:43,855] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:23:43,856] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:24:43,914] INFO     src.core.engine - 🔍 开始扫描 [17:24:43] | 周期:15m
+[2026-03-30 17:24:43,915] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:24:43,920] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:24:43,922] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:24:43,927] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:24:43,928] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:24:43,929] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:24:43,930] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:24:43,943] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:25:44,140] INFO     src.core.engine - 🔍 开始扫描 [17:25:44] | 周期:15m
+[2026-03-30 17:25:44,141] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:25:44,147] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:25:44,148] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:25:44,154] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:25:44,155] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:25:44,159] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:25:44,167] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:25:44,167] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:26:44,315] INFO     src.core.engine - 🔍 开始扫描 [17:26:44] | 周期:15m
+[2026-03-30 17:26:44,317] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:26:44,328] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:26:44,331] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:26:44,345] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:26:44,349] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:26:44,351] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:26:44,353] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:26:44,357] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:27:44,497] INFO     src.core.engine - 🔍 开始扫描 [17:27:44] | 周期:15m
+[2026-03-30 17:27:44,499] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:27:44,515] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:27:44,525] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:27:44,531] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:27:44,535] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:27:44,541] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:27:44,542] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:27:44,550] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:28:44,592] INFO     src.core.engine - 🔍 开始扫描 [17:28:44] | 周期:15m
+[2026-03-30 17:28:44,593] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:28:44,599] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:28:44,600] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:28:44,605] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:28:44,606] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:28:44,610] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:28:44,611] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:28:44,619] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:29:44,739] INFO     src.core.engine - 🔍 开始扫描 [17:29:44] | 周期:15m
+[2026-03-30 17:29:44,741] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:29:44,747] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:29:44,749] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:29:44,755] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:29:44,759] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:29:44,765] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:29:44,771] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:29:44,779] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:30:44,875] INFO     src.core.engine - 🔍 开始扫描 [17:30:44] | 周期:15m
+[2026-03-30 17:30:44,876] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:30:44,882] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:30:44,884] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:30:44,890] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:30:44,892] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:30:44,903] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:30:44,905] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:30:44,912] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:31:44,948] INFO     src.core.engine - 🔍 开始扫描 [17:31:44] | 周期:15m
+[2026-03-30 17:31:44,949] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:31:44,955] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:31:44,957] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:31:44,963] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:31:44,964] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:31:44,970] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:31:44,971] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:31:44,980] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:32:45,013] INFO     src.core.engine - 🔍 开始扫描 [17:32:45] | 周期:15m
+[2026-03-30 17:32:45,014] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:32:45,022] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:32:45,024] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:32:45,029] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:32:45,031] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:32:45,032] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:32:45,036] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:32:45,039] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:33:45,084] INFO     src.core.engine - 🔍 开始扫描 [17:33:45] | 周期:15m
+[2026-03-30 17:33:45,085] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:33:45,091] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:33:45,092] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:33:45,101] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:33:45,102] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:33:45,104] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:33:45,108] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:33:45,111] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:34:45,175] INFO     src.core.engine - 🔍 开始扫描 [17:34:45] | 周期:15m
+[2026-03-30 17:34:45,176] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:34:45,182] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:34:45,183] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:34:45,189] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:34:45,190] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:34:45,196] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:34:45,197] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:34:45,203] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:35:45,233] INFO     src.core.engine - 🔍 开始扫描 [17:35:45] | 周期:15m
+[2026-03-30 17:35:45,235] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:35:45,247] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:35:45,250] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:35:45,263] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:35:45,265] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:35:45,271] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:35:45,272] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:35:45,274] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:36:45,319] INFO     src.core.engine - 🔍 开始扫描 [17:36:45] | 周期:15m
+[2026-03-30 17:36:45,320] WARNING  src.core.analyzer - BTCUSDT 数据不足，无法分析
+[2026-03-30 17:36:45,326] INFO     src.core.engine -   BTCUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:36:45,331] WARNING  src.core.analyzer - ETHUSDT 数据不足，无法分析
+[2026-03-30 17:36:45,337] INFO     src.core.engine -   ETHUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:36:45,338] WARNING  src.core.analyzer - SOLUSDT 数据不足，无法分析
+[2026-03-30 17:36:45,340] INFO     src.core.engine -   SOLUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:36:45,347] WARNING  src.core.analyzer - DOGEUSDT 数据不足，无法分析
+[2026-03-30 17:36:45,349] INFO     src.core.engine -   DOGEUSDT: 0.0000 | 评分:0.0/9.0 | 信号:HOLD | [MACD:0.0 BOLL:0.0 RSI:0.0 KDJ:0.0]
+[2026-03-30 17:36:53,324] INFO     src.core.engine - ⏹️ 引擎已停止
+[2026-03-30 17:37:49,504] INFO     src.core.rules - 已加载 5 条规则
+[2026-03-30 17:37:49,505] INFO     src.core.engine - 数据加载成功: 0 条成交记录
