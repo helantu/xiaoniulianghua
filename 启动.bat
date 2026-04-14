@@ -10,11 +10,14 @@ echo.
 cd /d "%~dp0"
 
 echo [启动中] 检查Python环境...
-set PYTHON=C:\Users\lenovo\.workbuddy\binaries\python\envs\niuquant\Scripts\python.exe
 
-if not exist "%PYTHON%" (
-    echo [错误] Python环境未找到，请先运行:
-    echo   C:\Users\lenovo\.workbuddy\binaries\python\versions\3.13.12\python.exe -m venv C:\Users\lenovo\.workbuddy\binaries\python\envs\niuquant
+:: 直接使用python命令，依赖PATH
+python --version >nul 2>&1
+if %errorlevel% equ 0 (
+    echo [信息] Python环境正常
+    set PYTHON=python
+) else (
+    echo [错误] 未找到Python，请先安装Python并添加到PATH
     echo.
     pause
     exit /b 1

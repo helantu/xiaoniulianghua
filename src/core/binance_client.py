@@ -3,7 +3,6 @@
 """
 import os
 import logging
-import ssl
 import urllib3
 from binance.client import Client
 from binance.exceptions import BinanceAPIException, BinanceOrderException
@@ -36,26 +35,21 @@ class BinanceClientManager:
                 self._connected = True
                 return True
 
-            # 根据环境设置正确的API端点
-            api_url = None
             if self.use_testnet:
-                api_url = 'https://testnet.binance.vision'
+                logger.info("连接到币安测试网")
+                self.client = Client(
+                    self.api_key,
+                    self.api_secret,
+                    testnet=True,
+                    requests_params={'verify': False}
+                )
             else:
-                api_url = 'https://www.bmwweb.solutions'  # 使用未被屏蔽的币安代理
-            
-            logger.info(f"连接到币安{'测试网' if self.use_testnet else '正式网'}: {api_url}")
-            
-            # 创建SSL上下文（解决SSL连接问题）
-            ssl_context = ssl.create_default_context()
-            ssl_context.check_hostname = False
-            ssl_context.verify_mode = ssl.CERT_NONE
-            
-            self.client = Client(
-                self.api_key,
-                self.api_secret,
-                api_url=api_url,
-                requests_params={'verify': False}
-            )
+                logger.info("连接到币安正式网 (api.binance.com)")
+                self.client = Client(
+                    self.api_key,
+                    self.api_secret,
+                    requests_params={'verify': False}
+                )
             # 验证连接
             self.client.ping()
             self._connected = True
@@ -160,6 +154,32 @@ class BinanceClientManager:
                 return float(asset['availableBalance'])
         return 0.0
 
+    def get_funding_balance(self, asset: str = 'USDT') -> float:
+        """获取资金账户余额"""
+        if not self.is_connected:
+            return 0.0
+        try:
+            # 使用sapi获取资金账户余额
+            balances = self.client.get_asset_balance(asset=asset)
+            if balances:
+                return float(balances.get('free', 0))
+            return 0.0
+        except Exception as e:
+            logger.error(f"获取资金账户余额失败: {e}")
+            return 0.0
+
+    def get_total_balance(self) -> dict:
+        """获取所有账户的USDT余额汇总"""
+        spot = self.get_spot_balance('USDT')
+        futures = self.get_futures_balance()
+        funding = self.get_funding_balance('USDT')
+        return {
+            'spot': spot,
+            'futures': futures,
+            'funding': funding,
+            'total': spot + futures + funding
+        }
+
     # ==================== 现货交易 ====================
 
     def spot_market_buy(self, symbol: str, quantity: float) -> dict:
@@ -201,6 +221,24 @@ class BinanceClientManager:
         except BinanceOrderException as e:
             logger.error(f"现货限价买入失败: {e}")
             return {}
+
+    def round_quantity(self, symbol: str, quantity: float, target_usdt: float = None) -> float:
+        """
+        根据币种精度取整数量。
+        如果传入 target_usdt，则按目标金额计算数量（推荐用法）。
+        """
+        precisions = {
+            'BTCUSDT': 5, 'ETHUSDT': 4, 'SOLUSDT': 3,
+            'BNBUSDT': 3, 'DOGEUSDT': 0,
+        }
+        decimals = precisions.get(symbol, 4)
+
+        if target_usdt is not None:
+            price = self.get_ticker_price(symbol)
+            if price and price > 0:
+                quantity = target_usdt / price
+
+        return round(quantity, decimals)
 
     # ==================== 合约交易 ====================
 
@@ -265,6 +303,53 @@ class BinanceClientManager:
         except Exception as e:
             logger.error(f"撤单失败: {e}")
             return {}
+
+    def spot_oco_sell(self, symbol: str, quantity: float, stop_price: float,
+                      limit_price: float, stop_limit_price: float = None) -> dict:
+        """
+        现货OCO止盈止损卖单
+        - stop_price: 触发止损的价格（当价格<=此值时触发止损）
+        - limit_price: 止盈限价（当价格>=此值时以该价格卖出）
+        - stop_limit_price: 止损限价（可选，默认用stop_price的99%）
+        """
+        if not self.is_connected:
+            return {'error': '未连接'}
+        try:
+            if stop_limit_price is None:
+                # 止损限价略低于触发价，确保能成交
+                stop_limit_price = stop_price * 0.99
+
+            # 获取价格精度
+            info = self.client.get_symbol_info(symbol)
+            price_filter = next((f for f in info['filters'] if f['filterType'] == 'PRICE_FILTER'), None)
+            tick_size = float(price_filter['tickSize']) if price_filter else 0.01
+
+            # 按精度格式化价格
+            def format_price(p):
+                decimals = len(str(tick_size).split('.')[-1].rstrip('0')) if '.' in str(tick_size) else 0
+                return f"{p:.{decimals}f}"
+
+            # 检查OCO订单条件
+            logger.info(f"OCO参数检查: {symbol} 数量:{quantity} 止盈:{limit_price:.4f} 止损:{stop_price:.4f}")
+            
+            order = self.client.create_oco_order(
+                symbol=symbol,
+                side='SELL',
+                quantity=quantity,
+                price=format_price(limit_price),           # 止盈限价
+                stopPrice=format_price(stop_price),        # 止损触发价
+                stopLimitPrice=format_price(stop_limit_price),  # 止损限价
+                stopLimitTimeInForce='GTC'
+            )
+            logger.info(f"OCO订单创建成功: {symbol} 数量:{quantity} "
+                       f"止盈:{limit_price} 止损:{stop_price}")
+            return order
+        except BinanceOrderException as e:
+            logger.error(f"OCO订单创建失败: {e}")
+            return {'error': str(e), 'code': e.code if hasattr(e, 'code') else None}
+        except Exception as e:
+            logger.error(f"OCO订单异常: {e}")
+            return {'error': str(e)}
 
     def get_open_orders(self, symbol: str = None, is_futures: bool = False) -> list:
         """获取挂单"""

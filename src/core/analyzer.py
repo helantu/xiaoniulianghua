@@ -30,12 +30,10 @@ class SignalScore:
     def score_str(self) -> str:
         return f"{self.total_score:.1f}/{self.max_score}"
 
-    @property
     def should_buy(self, threshold: float = 6.0) -> bool:
         """是否应该买入（根据动态阈值判断）"""
         return self.total_score >= threshold
 
-    @property
     def should_sell(self, threshold: float = 2.0) -> bool:
         """是否应该卖出（根据动态阈值判断）"""
         return self.total_score <= threshold
